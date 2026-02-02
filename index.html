@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio Personal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Work+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Jesus Diaz</h1>
+            <p class="subtitle">Data Analyst | BI Analyst | Programer</p>
+            <div class="divider"></div>
+        </header>
+
+        <section class="about reveal">
+            <h2>Sobre Mí</h2>
+            <p>
+                ¡Hola! Soy un profesional apasionado por la tecnología, los datos y la innovación. Disfruto transformar información en conocimiento útil y convertir ideas en soluciones digitales bien estructuradas. Mi perfil combina el análisis de datos con la programación, lo que me permite construir sistemas que no solo funcionan, sino que toman mejores decisiones.
+            </p>
+            <p>
+                Me motiva el aprendizaje continuo y la mejora constante, por eso me mantengo al día con tendencias en análisis de datos, desarrollo web y buenas prácticas de la industria. Creo firmemente que los datos, bien trabajados y apoyados por la programación, tienen el poder de impulsar proyectos más inteligentes, eficientes y con impacto real.
+            </p>
+        </section>
+
+        <section class="reveal">
+            <h2>Mis Virtudes</h2>
+<div class="skills-grid">
+    <div class="skill-card">
+        <h3>📊 Pensamiento Analítico</h3>
+        <p>Capacidad para analizar datos, identificar patrones y convertir información en decisiones claras y accionables.</p>
+    </div>
+
+    <div class="skill-card">
+        <h3>💻 Lógica y Programación</h3>
+        <p>Disfruto construir soluciones mediante código, aplicando lógica, estructura y buenas prácticas en cada desarrollo.</p>
+    </div>
+
+    <div class="skill-card">
+        <h3>🎯 Enfoque en Resultados</h3>
+        <p>Orientado a crear soluciones funcionales, eficientes y alineadas con objetivos claros y medibles.</p>
+    </div>
+
+    <div class="skill-card">
+        <h3>🚀 Proactividad y Aprendizaje Continuo</h3>
+        <p>Siempre en búsqueda de mejorar mis habilidades, aprender nuevas tecnologías y optimizar procesos existentes.</p>
+    </div>
+
+    <div class="skill-card">
+        <h3>🤝 Trabajo en Equipo</h3>
+        <p>Comunicación clara y colaboración efectiva para aportar valor en equipos multidisciplinarios y entornos técnicos.</p>
+    </div>
+
+    <div class="skill-card">
+        <h3>🔍 Atención al Detalle</h3>
+        <p>Cuidadoso en el manejo de datos y el desarrollo de código, priorizando precisión, calidad y coherencia.</p>
+    </div>
+</div>
+        </section>
+
+        <section class="reveal">
+    <h2>Proyectos Destacados</h2>
+    <div class="projects-grid">
+
+        <div class="project-card">
+            <h3>📊 Análisis y Visualización de Datos</h3>
+            <p>
+                Proyecto enfocado en el análisis de datos para identificar patrones y generar insights
+                mediante indicadores clave. Incluyó limpieza de datos, consultas SQL y visualización
+                de resultados para apoyar la toma de decisiones.
+            </p>
+        </div>
+
+        <div class="project-card">
+            <h3>💻 Sistema de Gestión con Base de Datos</h3>
+            <p>
+                Desarrollo de un sistema que implementa operaciones CRUD, aplicando lógica de programación
+                y buenas prácticas de diseño. Se utilizó una base de datos relacional para el manejo
+                estructurado y seguro de la información.
+            </p>
+        </div>
+
+        <div class="project-card">
+            <h3>📈 Aplicación de Datos y Reportes</h3>
+            <p>
+                Aplicación que integra programación y análisis de datos para generar reportes automáticos.
+                El proyecto se centró en optimizar procesos, mejorar la calidad de los datos y presentar
+                información clara y accionable.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+        <section class="contact reveal">
+            <h2>Conectemos</h2>
+            <p>¿Interesado en trabajar juntos o simplemente quieres saludar? ¡Me encantaría saber de ti!</p>
+            <div class="contact-links">
+                <a href="https://github.com/jesusdiazitla-lang" class="contact-link" target="_blank">
+                    GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/jesusdiaz1210" class="contact-link" target="_blank">
+                    LinkedIn
+                </a>
+                <a href="mailto:jdm.photo12@gmail.com" class="contact-link">
+                    Email
+                </a>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Jesus Diaz. Desplegado con GitHub Pages.</p>
+        </footer>
+    </div>
+
+    <script>
+        // Scroll reveal animation
+        function reveal() {
+            const reveals = document.querySelectorAll('.reveal');
+            
+            for (let i = 0; i < reveals.length; i++) {
+                const windowHeight = window.innerHeight;
+                const elementTop = reveals[i].getBoundingClientRect().top;
+                const elementVisible = 150;
+                
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add('active');
+                } else {
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
+
+        window.addEventListener('scroll', reveal);
+        reveal(); // Check on page load
+    </script>
+</body>
+</html>
