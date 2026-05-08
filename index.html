@@ -3,140 +3,376 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio Personal</title>
+    <title>Jesus Diaz — Data & BI Analyst</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Work+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Jesus Diaz</h1>
-            <p class="subtitle">Data Analyst | BI Analyst | Programer</p>
-            <div class="divider"></div>
-        </header>
 
-        <section class="about reveal">
-            <h2>Sobre Mí</h2>
-            <p>
-                ¡Hola! Soy un profesional apasionado por la tecnología, los datos y la innovación. Disfruto transformar información en conocimiento útil y convertir ideas en soluciones digitales bien estructuradas. Mi perfil combina el análisis de datos con la programación, lo que me permite construir sistemas que no solo funcionan, sino que toman mejores decisiones.
-            </p>
-            <p>
-                Me motiva el aprendizaje continuo y la mejora constante, por eso me mantengo al día con tendencias en análisis de datos, desarrollo web y buenas prácticas de la industria. Creo firmemente que los datos, bien trabajados y apoyados por la programación, tienen el poder de impulsar proyectos más inteligentes, eficientes y con impacto real.
-            </p>
-        </section>
+    <!-- NAV -->
+    <nav class="nav" id="nav">
+        <span class="nav-logo">JD</span>
+        <ul class="nav-links">
+            <li><a href="#about">Sobre mí</a></li>
+            <li><a href="#experience">Experiencia</a></li>
+            <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
 
-        <section class="reveal">
-            <h2>Mis Virtudes</h2>
-<div class="skills-grid">
-    <div class="skill-card">
-        <h3>📊 Pensamiento Analítico</h3>
-        <p>Capacidad para analizar datos, identificar patrones y convertir información en decisiones claras y accionables.</p>
-    </div>
-
-    <div class="skill-card">
-        <h3>💻 Lógica y Programación</h3>
-        <p>Disfruto construir soluciones mediante código, aplicando lógica, estructura y buenas prácticas en cada desarrollo.</p>
-    </div>
-
-    <div class="skill-card">
-        <h3>🎯 Enfoque en Resultados</h3>
-        <p>Orientado a crear soluciones funcionales, eficientes y alineadas con objetivos claros y medibles.</p>
-    </div>
-
-    <div class="skill-card">
-        <h3>🚀 Proactividad y Aprendizaje Continuo</h3>
-        <p>Siempre en búsqueda de mejorar mis habilidades, aprender nuevas tecnologías y optimizar procesos existentes.</p>
-    </div>
-
-    <div class="skill-card">
-        <h3>🤝 Trabajo en Equipo</h3>
-        <p>Comunicación clara y colaboración efectiva para aportar valor en equipos multidisciplinarios y entornos técnicos.</p>
-    </div>
-
-    <div class="skill-card">
-        <h3>🔍 Atención al Detalle</h3>
-        <p>Cuidadoso en el manejo de datos y el desarrollo de código, priorizando precisión, calidad y coherencia.</p>
-    </div>
-</div>
-        </section>
-
-        <section class="reveal">
-    <h2>Proyectos Destacados</h2>
-    <div class="projects-grid">
-
-        <div class="project-card">
-            <h3>📊 Análisis y Visualización de Datos</h3>
-            <p>
-                Proyecto enfocado en el análisis de datos para identificar patrones y generar insights
-                mediante indicadores clave. Incluyó limpieza de datos, consultas SQL y visualización
-                de resultados para apoyar la toma de decisiones.
-            </p>
+    <!-- HERO -->
+    <header class="hero">
+        <div class="hero-inner">
+            <div class="hero-text">
+                <p class="hero-eyebrow mono">Data Analyst · BI Analyst · Developer</p>
+                <h1 class="hero-name">Jesus<br><em>Diaz</em></h1>
+                <p class="hero-tagline">Transformo datos en decisiones.<br>Del modelo al impacto.</p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">Ver proyectos</a>
+                    <a href="#contact" class="btn btn-outline">Conectemos</a>
+                </div>
+            </div>
+            <div class="hero-photo">
+                <!--
+                    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+                    Sube tu foto al repo con el nombre:
+                        foto.jpg  (o .png)
+                    y cambia src="foto.jpg" por el nombre
+                    exacto del archivo que subiste.
+                    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+                -->
+                <img src="Imagen de WhatsApp 2026-05-07 a las 21:49:12.jpeg" alt="Jesus Diaz" class="profile-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                <div class="profile-placeholder">
+                    <span>JD</span>
+                    <small>Sube foto.jpg al repo</small>
+                </div>
+            </div>
         </div>
+        <div class="hero-line"></div>
+    </header>
 
-        <div class="project-card">
-            <h3>💻 Sistema de Gestión con Base de Datos</h3>
-            <p>
-                Desarrollo de un sistema que implementa operaciones CRUD, aplicando lógica de programación
-                y buenas prácticas de diseño. Se utilizó una base de datos relacional para el manejo
-                estructurado y seguro de la información.
-            </p>
-        </div>
+    <main>
 
-        <div class="project-card">
-            <h3>📈 Aplicación de Datos y Reportes</h3>
-            <p>
-                Aplicación que integra programación y análisis de datos para generar reportes automáticos.
-                El proyecto se centró en optimizar procesos, mejorar la calidad de los datos y presentar
-                información clara y accionable.
-            </p>
-        </div>
-
-    </div>
-</section>
-
-        <section class="contact reveal">
-            <h2>Conectemos</h2>
-            <p>¿Interesado en trabajar juntos o simplemente quieres saludar? ¡Me encantaría saber de ti!</p>
-            <div class="contact-links">
-                <a href="https://github.com/jesusdiazitla-lang" class="contact-link" target="_blank">
-                    GitHub
-                </a>
-                <a href="https://www.linkedin.com/in/jesusdiaz1210" class="contact-link" target="_blank">
-                    LinkedIn
-                </a>
-                <a href="mailto:jdm.photo12@gmail.com" class="contact-link">
-                    Email
-                </a>
+        <!-- SOBRE MÍ -->
+        <section class="section about reveal" id="about">
+            <div class="section-label mono">01 / Sobre mí</div>
+            <div class="about-grid">
+                <h2 class="section-title">Datos que<br><em>cuentan historias</em></h2>
+                <div class="about-body">
+                    <p>
+                        Soy un profesional apasionado por la tecnología, los datos y la innovación, con experiencia en el sector financiero. Disfruto transformar información en conocimiento útil y convertir ideas en soluciones digitales bien estructuradas.
+                    </p>
+                    <p>
+                        Mi perfil combina análisis de datos, inteligencia de negocios y programación, lo que me permite diseñar sistemas que no solo funcionan, sino que generan decisiones más inteligentes. He trabajado en entornos bancarios y en la modernización de procesos críticos hacia plataformas en la nube.
+                    </p>
+                    <p>
+                        Creo firmemente que los datos, bien trabajados y apoyados por tecnología, tienen el poder de impulsar proyectos más eficientes y con impacto real.
+                    </p>
+                    <div class="about-badges">
+                        <span class="badge">SQL</span>
+                        <span class="badge">Python</span>
+                        <span class="badge">Power BI</span>
+                        <span class="badge">SSIS</span>
+                        <span class="badge">SSAS</span>
+                        <span class="badge">ETL</span>
+                        <span class="badge">Agile</span>
+                        <span class="badge">Jira</span>
+                        <span class="badge">IBM BPM</span>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <footer>
-            <p>&copy; 2026 Jesus Diaz. Desplegado con GitHub Pages.</p>
-        </footer>
-    </div>
+        <!-- EXPERIENCIA -->
+        <section class="section reveal" id="experience">
+            <div class="section-label mono">02 / Experiencia</div>
+            <h2 class="section-title">Trayectoria<br><em>profesional</em></h2>
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <div class="timeline-meta">
+                        <span class="timeline-date mono">2023 — Actual</span>
+                        <span class="timeline-tag">Banca</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Analista de Datos & BI — Sector Bancario</h3>
+                        <p>
+                            Participación activa en proyectos de analítica dentro de una institución financiera, con enfoque en la calidad de datos, reportería y automatización de procesos. Trabajo en entornos regulados donde la precisión y la trazabilidad de la información son críticas.
+                        </p>
+                        <ul class="timeline-list">
+                            <li>Análisis y validación de datos financieros para reportes regulatorios y de gestión.</li>
+                            <li>Diseño e implementación de pipelines ETL con <strong>SSIS</strong> para integración de fuentes heterogéneas.</li>
+                            <li>Construcción de cubos OLAP con <strong>SSAS</strong> para análisis multidimensional.</li>
+                            <li>Desarrollo de dashboards e indicadores clave (KPIs) en Power BI para áreas de negocio.</li>
+                            <li>Colaboración en sprints bajo metodología <strong>Agile/Scrum</strong>, con gestión de tareas en <strong>Jira</strong>.</li>
+                        </ul>
+                        <div class="tech-chips">
+                            <span>SSIS</span><span>SSAS</span><span>SQL Server</span><span>Power BI</span><span>Jira</span><span>Scrum</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item highlight-item">
+                    <div class="timeline-meta">
+                        <span class="timeline-date mono">En curso</span>
+                        <span class="timeline-tag accent-tag">Migración Cloud</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Migración BPM: IBM → Plataforma Cloud</h3>
+                        <p>
+                            Participación en el levantamiento, análisis y rediseño del proceso de <strong>solicitud de tarjetas de crédito/débito</strong>, actualmente operado sobre una plataforma IBM BPM (on-premise) hacia una solución moderna en la nube (on-cloud).
+                        </p>
+                        <ul class="timeline-list">
+                            <li>Relevamiento y documentación del flujo existente en IBM BPM.</li>
+                            <li>Análisis de datos del proceso: volúmenes, tiempos, cuellos de botella y KPIs operativos.</li>
+                            <li>Mapeo y transformación de reglas de negocio hacia la nueva plataforma cloud.</li>
+                            <li>Coordinación con equipos multidisciplinarios bajo marcos Agile, con seguimiento en Jira.</li>
+                            <li>Validación y pruebas de datos para garantizar integridad durante la migración.</li>
+                        </ul>
+                        <div class="tech-chips">
+                            <span>IBM BPM</span><span>Cloud</span><span>ETL</span><span>SQL</span><span>Agile</span><span>Jira</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- HABILIDADES -->
+        <section class="section reveal" id="skills">
+            <div class="section-label mono">03 / Habilidades</div>
+            <h2 class="section-title">Stack &<br><em>virtudes</em></h2>
+
+            <div class="skills-wrapper">
+                <div class="skills-col">
+                    <h4 class="skills-group-title mono">Datos & BI</h4>
+                    <div class="skill-bar-list">
+                        <div class="skill-bar-item">
+                            <span>SQL / SQL Server</span>
+                            <div class="bar"><div class="bar-fill" style="--w:90%"></div></div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <span>SSIS (ETL)</span>
+                            <div class="bar"><div class="bar-fill" style="--w:82%"></div></div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <span>SSAS (OLAP)</span>
+                            <div class="bar"><div class="bar-fill" style="--w:78%"></div></div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <span>Power BI</span>
+                            <div class="bar"><div class="bar-fill" style="--w:85%"></div></div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <span>Python (pandas, análisis)</span>
+                            <div class="bar"><div class="bar-fill" style="--w:75%"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-col">
+                    <h4 class="skills-group-title mono">Procesos & Gestión</h4>
+                    <div class="skill-bar-list">
+                        <div class="skill-bar-item">
+                            <span>Agile / Scrum</span>
+                            <div class="bar"><div class="bar-fill" style="--w:80%"></div></div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <span>Jira (gestión de actividades)</span>
+                            <div class="bar"><div class="bar-fill" style="--w:83%"></div></div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <span>IBM BPM</span>
+                            <div class="bar"><div class="bar-fill" style="--w:70%"></div></div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <span>Modelado de procesos (BPMN)</span>
+                            <div class="bar"><div class="bar-fill" style="--w:72%"></div></div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <span>Documentación técnica</span>
+                            <div class="bar"><div class="bar-fill" style="--w:88%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="virtues-grid">
+                <div class="virtue-card">
+                    <div class="virtue-icon">📊</div>
+                    <h3>Pensamiento Analítico</h3>
+                    <p>Identifico patrones, anomalías e insights accionables dentro de grandes volúmenes de datos financieros y operativos.</p>
+                </div>
+                <div class="virtue-card">
+                    <div class="virtue-icon">🔄</div>
+                    <h3>Mentalidad Agile</h3>
+                    <p>Trabajo en sprints, gestiono actividades con Jira y colaboro en equipos multidisciplinarios con iteraciones rápidas y entregas de valor constantes.</p>
+                </div>
+                <div class="virtue-card">
+                    <div class="virtue-icon">🏦</div>
+                    <h3>Dominio del Sector Bancario</h3>
+                    <p>Experiencia en entornos regulados, procesos financieros críticos y análisis de datos con altos estándares de calidad y trazabilidad.</p>
+                </div>
+                <div class="virtue-card">
+                    <div class="virtue-icon">☁️</div>
+                    <h3>Transformación Digital</h3>
+                    <p>Participación activa en migraciones de plataformas legadas hacia cloud, rediseñando flujos y garantizando integridad de datos.</p>
+                </div>
+                <div class="virtue-card">
+                    <div class="virtue-icon">🎯</div>
+                    <h3>Enfoque en Resultados</h3>
+                    <p>Orientado a soluciones funcionales y eficientes, alineadas con objetivos de negocio claros y medibles.</p>
+                </div>
+                <div class="virtue-card">
+                    <div class="virtue-icon">🔍</div>
+                    <h3>Atención al Detalle</h3>
+                    <p>Precisión en el manejo de datos, modelado y código. La calidad y la coherencia no son opcionales.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROYECTOS -->
+        <section class="section reveal" id="projects">
+            <div class="section-label mono">04 / Proyectos</div>
+            <h2 class="section-title">Proyectos<br><em>destacados</em></h2>
+
+            <div class="projects-grid">
+
+                <div class="project-card featured">
+                    <div class="project-number mono">01</div>
+                    <div class="project-tag">Migración · BPM · Cloud · Banca</div>
+                    <h3>Migración de Proceso Bancario: IBM BPM → Cloud</h3>
+                    <p>
+                        Análisis, documentación y rediseño del proceso de <strong>solicitud de tarjetas</strong> (crédito/débito) desde una plataforma IBM BPM on-premise hacia una solución moderna en la nube. Involucró levantamiento de flujos, análisis de datos del proceso, mapeo de reglas de negocio y validación de integridad durante la transición.
+                    </p>
+                    <div class="project-stack">
+                        <span>IBM BPM</span><span>BPMN</span><span>SQL</span><span>Cloud</span><span>Agile</span><span>Jira</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-number mono">02</div>
+                    <div class="project-tag">ETL · SSIS · Datos</div>
+                    <h3>Pipelines ETL con SSIS</h3>
+                    <p>
+                        Diseño e implementación de procesos ETL (Extract, Transform, Load) con SQL Server Integration Services para integrar múltiples fuentes de datos. Incluyó limpieza, transformación y carga de datos hacia un Data Warehouse, garantizando calidad y consistencia para reportería.
+                    </p>
+                    <div class="project-stack">
+                        <span>SSIS</span><span>SQL Server</span><span>ETL</span><span>Data Warehouse</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-number mono">03</div>
+                    <div class="project-tag">OLAP · SSAS · BI</div>
+                    <h3>Cubos OLAP con SSAS</h3>
+                    <p>
+                        Construcción de cubos multidimensionales con SQL Server Analysis Services para habilitar análisis ad-hoc, slicing y comparativas por dimensiones de negocio. Base para dashboards de Power BI consumidos por áreas directivas.
+                    </p>
+                    <div class="project-stack">
+                        <span>SSAS</span><span>MDX</span><span>Power BI</span><span>SQL Server</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-number mono">04</div>
+                    <div class="project-tag">BI · Power BI · Reportería</div>
+                    <h3>Dashboard de Reportería Financiera</h3>
+                    <p>
+                        Desarrollo de dashboards interactivos en Power BI con KPIs financieros y operativos. Conectado a fuentes SQL Server y cubos SSAS. Orientado a la toma de decisiones por parte de gerencias y equipos de control.
+                    </p>
+                    <div class="project-stack">
+                        <span>Power BI</span><span>DAX</span><span>SQL</span><span>SSAS</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-number mono">05</div>
+                    <div class="project-tag">Análisis · SQL · Insights</div>
+                    <h3>Análisis y Visualización de Datos</h3>
+                    <p>
+                        Proyecto de análisis exploratorio sobre datos estructurados: limpieza, consultas SQL avanzadas, identificación de patrones y generación de insights para apoyar decisiones operativas y estratégicas.
+                    </p>
+                    <div class="project-stack">
+                        <span>SQL</span><span>Python</span><span>Power BI</span><span>EDA</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-number mono">06</div>
+                    <div class="project-tag">Backend · CRUD · BD Relacional</div>
+                    <h3>Sistema de Gestión con Base de Datos</h3>
+                    <p>
+                        Desarrollo de un sistema con operaciones CRUD completas sobre una base de datos relacional. Aplicando buenas prácticas de modelado, normalización y programación estructurada para el manejo seguro de la información.
+                    </p>
+                    <div class="project-stack">
+                        <span>SQL Server</span><span>Python</span><span>CRUD</span><span>ERD</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section class="section contact reveal" id="contact">
+            <div class="section-label mono">05 / Contacto</div>
+            <div class="contact-inner">
+                <h2 class="section-title contact-title">¿Hablamos<br><em>de datos?</em></h2>
+                <p class="contact-sub">¿Interesado en colaborar, en un proyecto o simplemente quieres conectar? ¡Escríbeme!</p>
+                <div class="contact-links">
+                    <a href="https://github.com/jesusdiazitla-lang" class="contact-link" target="_blank">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                        GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/jesusdiaz1210" class="contact-link" target="_blank">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        LinkedIn
+                    </a>
+                    <a href="mailto:jdm.photo12@gmail.com" class="contact-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        Email
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p class="mono">&copy; 2026 Jesus Diaz — Desplegado con GitHub Pages.</p>
+    </footer>
 
     <script>
-        // Scroll reveal animation
-        function reveal() {
-            const reveals = document.querySelectorAll('.reveal');
-            
-            for (let i = 0; i < reveals.length; i++) {
-                const windowHeight = window.innerHeight;
-                const elementTop = reveals[i].getBoundingClientRect().top;
-                const elementVisible = 150;
-                
-                if (elementTop < windowHeight - elementVisible) {
-                    reveals[i].classList.add('active');
-                } else {
-                    reveals[i].classList.remove('active');
-                }
-            }
-        }
+        // Navbar scroll effect
+        const nav = document.getElementById('nav');
+        window.addEventListener('scroll', () => {
+            nav.classList.toggle('nav-scrolled', window.scrollY > 60);
+        });
 
+        // Scroll reveal
+        function reveal() {
+            document.querySelectorAll('.reveal').forEach(el => {
+                const top = el.getBoundingClientRect().top;
+                if (top < window.innerHeight - 100) el.classList.add('active');
+            });
+        }
         window.addEventListener('scroll', reveal);
-        reveal(); // Check on page load
+        reveal();
+
+        // Animate skill bars when visible
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    e.target.querySelectorAll('.bar-fill').forEach(bar => {
+                        bar.style.width = bar.style.getPropertyValue('--w');
+                    });
+                }
+            });
+        }, { threshold: 0.3 });
+        document.querySelectorAll('.skills-wrapper').forEach(el => observer.observe(el));
     </script>
 </body>
 </html>
